@@ -1,0 +1,34 @@
+{
+  "name": "Content",
+  "fields": [
+    {
+      "fieldName": "data",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "doc",
+      "otherEntityRelationshipName": "content",
+      "relationshipValidateRules": "required",
+      "relationshipName": "doc",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20210102070755",
+  "entityTableName": "content",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
